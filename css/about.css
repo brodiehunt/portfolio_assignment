@@ -1,0 +1,119 @@
+.main {
+  background:linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1));
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+section.main section.title {
+  position: relative;
+  margin-top: 7vh;
+  width: 100%;
+  /* border: solid 1px #fff; */
+}
+
+section.main section.title h1 {
+  position: relative;
+  /* border: solid 1px #fff; */
+}
+
+section.main figure {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  /* border: solid 1px #fff; */
+}
+
+section.main figure img {
+  position: relative;
+  width: 60%;
+  height: 85%;
+}
+
+section.main figure figcaption {
+  position: relative;
+  width: 60%;
+  margin-top: 1%;
+  /* border: solid 1px #fff; */
+}
+
+section.main article {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border: solid 1px #fff; */
+}
+
+
+section.main article p {
+  position: relative;
+  flex-shrink: 1;
+  /* border: solid 1px #fff; */
+  width: 100%;
+}
+
+section.main section.life-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+  max-width: 100%;
+  /* border: solid 1px #fff; */
+} 
+
+section.main section.life-container section.item {
+  position: relative;
+  overflow: hidden;
+}
+
+section.main section.life-container section.passion {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+section.main section.life-container section.skating {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+section.main section.life-container section.surfing {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+section.main section.life-container section.gaming {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+
+section.main section.life-container section.problem {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+
+section.main section.life-container img {
+  width: 100%;
+  transition: transform 3s;
+}
+
+section.main section.life-container h3.text {
+  position: relative;
+  bottom: 50%;
+  z-index: 1;
+  color: orange;
+  transition: transform 3s;
+}
+
+section.main section.life-container section.item:hover img{
+  transform: scale(1.3);
+}
+
+section.main section.life-container section.item:hover h3.text {
+  transform: scale(1.3);
+}
