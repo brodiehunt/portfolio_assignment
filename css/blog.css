@@ -1,0 +1,102 @@
+.main-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background:linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1));
+  border: solid 1px #fff;
+}
+
+.main-container .headings {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px white;
+  width: 100%;
+  height: 10%;
+  border: solid 1px #fff;
+}
+
+.main-container h1 {
+  color: white;
+  width: 100%;
+  border: solid 1px #fff;
+  margin-top: 7vh;
+  text-align: center;
+  height: 7vh;
+}
+
+.main-container h3 {
+  color: white;
+  width: 100%;
+  height: 5vh;
+  border: solid 1px #fff;
+  text-align: center;
+}
+
+.recents-scroll {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+}
+
+.recents {
+  min-width: 200px;
+  height: 95%;
+  margin: 5px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 6fr 1fr;
+  grid-row-gap: 2px;
+  grid-template-areas: 
+  "img img img img img img"
+  "txt txt txt txt txt txt";
+  border: solid 1px white;
+  
+}
+
+.recents-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.recents img {
+  width: 95%;
+  height: 95%;
+  grid-area: img;
+  margin: auto auto;
+}
+.recents article {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: txt;
+}
+
+.recents p {
+  position: relative;
+  width: 100%;
+  color: white;
+  border: solid 1px white;
+
+}
+
+.recents a {
+  text-decoration: none;
+  color: white;
+  border: solid 1px white;
+  grid-area: btn;
+  font-size: 0.9rem;
+  width: 20%;
+  text-align: center;
+}
