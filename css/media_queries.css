@@ -1,6 +1,11 @@
 
 @media only screen and (min-width: 768px) {
-
+  
+  header .menu > div > div.twitter,
+  header .menu > div > div.linkedin,
+  header .menu > div > div.github {
+    margin-right: 10vw;
+  }
   section.main figure {
     width: 50%;
   }
@@ -42,6 +47,9 @@
 }
 
 @media only screen and (min-width: 992px) {
+  
+ 
+  
   section.main section.life-container {
     
     grid-template-columns: repeat(4, 1fr);
