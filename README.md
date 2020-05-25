@@ -41,6 +41,32 @@ This Portfolio Website was made primarily to demonstrate my skillset to future e
 This website was built using only:
 
 - CSS 
+
 - HTML
+
 - Deployed on netlfiy
+
+  
+
+  ## Screenshots
+
+  [home-desktop](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/home/home-desktop.png)
+
+  [home-mobile](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/home/home-mobile.png)
+
+  [about-me desktop](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/about-me/about-me-desktop.png)
+
+  [about-me-mobile](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/about-me/about-me-mobile.png)
+
+  [about-me-passion ](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/about-me/mobile-passions.png)
+
+  [project-top](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/projects/project-top.png)
+
+  [project-bottom](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/projects/project-bottom.png)
+
+  [blog](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/blog/my%20blog-%20top.png)
+
+  [blog](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/blog/my-blog-post.png)
+
+  
 
