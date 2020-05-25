@@ -99,12 +99,11 @@ section .button a {
   border: solid 1px #3d72a4;
   border-radius: 20px;
   padding: 1%;
-  transition: 0.5s ease-in
+  transition: 0.5s ease-in;
 }
 
 section .button a:hover {
-  background-color: rgba(211,211,211,0.5);
-  transform: scale(1.3);
+  background-color: rgba(61, 114, 164);
 }
 section p {
   margin-top: 5%;
@@ -114,6 +113,58 @@ section .item img {
   width: 100%;
   height: 100%;
   border: groove 3px gray;
+}
+
+section.second-container {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+section.second-container article {
+  position: relative;
+  width: 40%;
+  min-width: 200px;
+  border: solid 1px white;
+  color: white;
+  border: groove 10px rgba(255, 255, 255, 0.4);
+}
+
+article.skills h3,
+article.go-to-blog h3 {
+  font-size: 2rem;
+}
+
+article.skills p,
+article.go-to-blog p {
+  
+} 
+
+article.skills a,
+article.go-to-blog a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+article.go-to-blog a {
+  margin-left: 50%;
+  border: solid 1px rgba(61, 114, 164);
+  border-radius: 20px;
+  transition: 0.5s ease-in;
+}
+article.skills a {
+  background-color: rgba(61, 114, 164, 0.5);
+}
+
+
+article.go-to-blog a:hover {
+  background-color: rgba(61, 114, 164);
 }
 
 

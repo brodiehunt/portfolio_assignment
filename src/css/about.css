@@ -84,7 +84,7 @@ section.main-about article a {
 }
 
 section.main-about article a:hover {
-  background-color: rgba(211,211,211,0.5);
+  background-color:  rgba(61, 114, 164, 0.8)
 }
 /* grid container holding photos and titles */
 section.life-container {
