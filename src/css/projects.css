@@ -1,3 +1,4 @@
+/* main container which is a grid for each project container */
 .main-container {
   color: #fff;
   background:linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1));
@@ -21,12 +22,13 @@
   grid-row-gap: 7vh;
 }
 
-.main-container .title {
+.main-container header {
   grid-area: title;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 3vh;
 }
+
 
 .main-container .one {
   grid-area: pro-1;
@@ -51,7 +53,7 @@
 .main-container .six {
   grid-area: pro-6;
 }
-
+/* targeting all main container grid children except for the title */
 section .item {
   width: 95%;
   height: 100%;
@@ -61,7 +63,7 @@ section .item {
   grid-template-rows: 0.3fr 1fr 1fr 0.1fr; 
   border: groove 10px rgba(255, 255, 255, 0.4);
 }
-
+/* title of each individual container */
 section h2 {
   position: relative;
   grid-row: 1 / span 1;
@@ -69,20 +71,20 @@ section h2 {
   font-size: 3rem;
   margin-top: 3%
 } 
-
+/* container holding img in each project container */
  section figure {
   position: relative;
   grid-row: 2 /span 1;
   margin: 3% 10%;
 } 
-
+/* the description of the project */
 section article {
   position: relative;
   grid-row: 3 /span 1;
   text-align: center;
   margin: 3% 5%;
 } 
-
+/* button to find more info about project */
 section .button {
   position: relative;
   grid-row: 4 /span 1;
