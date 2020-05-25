@@ -67,10 +67,11 @@ section.main-about article {
 
 section.main-about article p {
   position: relative;
-  flex-shrink: 1;
   /* border: solid 1px #fff; */
   width: 100%;
   color: white;
+  text-align: left;
+  padding: 4px;
 }
 /* link to projects section of website */
 section.main-about article a {

@@ -140,9 +140,9 @@ article.go-to-blog h3 {
   font-size: 2rem;
 }
 
-article.skills p,
-article.go-to-blog p {
-  
+article.skills p {
+  text-align: left;
+
 } 
 
 article.skills a,
