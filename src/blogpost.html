@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/media_queries.css">
-    <title>Brodie Hunt</title>
+    <title>Brodie Hunt | Blog </title>
   </head>
   <body>
+    <!-- main header / nav -->
     <header>
       <input type="checkbox" class="checked-state">
       <div class="hamburger"><div></div></div>
@@ -21,13 +22,13 @@
       <div class="menu">
         <div>
           <div class="twitter">
-            <a href="https://twitter.com/home"><img src="/img/twitter-icon.png" alt="twitter"></a>
+            <a href="https://twitter.com/home"><img src="./img/twitter-icon.jpg" alt="twitter"></a>
           </div>
           <div class="linkedin">
-            <a href="https://www.linkedin.com/in/brodie-hunt-8ab1311a4/"><img src="/img/linkedin-icon1.png" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/in/brodie-hunt-8ab1311a4/"><img src="./img/linkedin-icon1.png" alt="linkedin"></a>
           </div>
           <div class="github">
-            <a href="https://github.com/brodiehunt"><img src="/img/github-icon.png" alt="github"></a>
+            <a href="https://github.com/brodiehunt"><img src="./img/github-icon.png" alt="github"></a>
           </div>
           <nav>
             <ul>
@@ -39,118 +40,137 @@
         </div>
       </div>
     </header>
+    <!-- main cointainer for page content -->
     <section class="main-container">
-      <div class="headings">
+      <div class="headings">  <!--This should definitely be a header-->
         <h1>My Blog</h1>
         <h3>Recent Posts</h3>
       </div>
+      <!-- This is the container holding the horizontal scroll element for recent posts -->
       <section class="recents-scroll">
+        <!-- First post in container -->
         <section class="recents one">
-          <img src="/img/surfing.jpg" alt="Blog photo">
+          <!-- image relating the the blog post -->
+          <img src="./img/surfing.jpg" alt="Blog photo">
+          <!-- contains heading of blog post and an anchor tag to that blog post -->
           <article class="description">
             <p>OMG my Blog number 1</p>
             <a href="#one">Visit</a>
           </article>
+          <!-- second post -->
         </section>
         <section class="recents two">
-          <img src="/img/T2A1.jpeg" alt="Blog photo">
+          <img src="./img/T2A1.jpeg" alt="Blog photo">
           <article class="description">
             <p>OMG my Blog number 2</p>
             <a href="#two">Visit</a>
           </article>
         </section>
+        <!-- third post -->
         <section class="recents three">
-          <img src="/img/T2A2.jpeg" alt="Blog photo">
+          <img src="./img/T2A2.jpeg" alt="Blog photo">
           <article class="description">
             <p>OMG my Blog number 3</p>
             <a href="#three">Visit</a>
           </article>
         </section>
+        <!-- 4th post -->
         <section class="recents four">
-          <img src="/img/T2A3.jpeg" alt="Blog photo">
+          <img src="./img/T2A3.jpeg" alt="Blog photo">
           <article class="description">
             <p>OMG my Blog number 4</p>
             <a href="#four">Visit</a>
           </article>
         </section>
+        <!-- fifth post -->
         <section class="recents five">
-          <img src="/img/skating.jpeg" alt="Blog photo">
+          <img src="./img/skating.jpeg" alt="Blog photo">
           <article class="description">
             <p>OMG my Blog number 5</p>
             <a href="#five">Visit</a>
           </article>
         </section>
       </section>
+      <!-- main container for all full blog posts -->
       <section class="blog post">
+        <!-- first individul blog article -->
         <article id="one" class="post one">
+          <!-- title of blog post -->
           <h2>Blog post 1</h2>
-          <section class="banner">
-            <a href="index.html" class="twitter"><img src="/img/twitter-icon.jpg" alt="twitter-icon"></a>
-            <a href="index.html" class="facebook"><img src="/img/facebook-icon.png" alt="facebook-icon"></a>
+          <!-- banner under title containing link to share on twitter and facebook and time of publishing -->
+          <section class="banner">   <!--maybe this should be a div tag-->
+            <a href="index.html" class="twitter"><img src="./img/twitter-icon.jpg" alt="twitter-icon"></a>
+            <a href="index.html" class="facebook"><img src="./img/facebook-icon.png" alt="facebook-icon"></a>
             <p>Published: 11:11pm on 11/11/11</p>
           </section>
+          <!-- contains image from blog post -->
           <figure>
-            <img src="/img/skating.jpeg" alt="fill">
+            <img src="./img/skating.jpeg" alt="fill">
           </figure>
+          <!-- contains text from blog post -->
           <section class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero eligendi possimus deserunt. Cum neque sapiente ullam labore, veritatis dolorem, dolore reiciendis ipsum laborum facilis pariatur iure expedita est debitis.</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, reiciendis quo incidunt laudantium quaerat ipsum cumque nesciunt, enim placeat consectetur voluptate voluptatibus quae labore vitae autem hic, neque illum inventore?</p>
           </section>
         </article>
+        <!-- article two -->
         <article id="two" class="post two">
           <h2>Blog post 2</h2>
           <section class="banner">
-            <a href="index.html" class="twitter"><img src="/img/twitter-icon.jpg" alt="twitter-icon"></a>
-            <a href="index.html" class="facebook"><img src="/img/facebook-icon.png" alt="facebook-icon"></a>
+            <a href="index.html" class="twitter"><img src="./img/twitter-icon.jpg" alt="twitter-icon"></a>
+            <a href="index.html" class="facebook"><img src="./img/facebook-icon.png" alt="facebook-icon"></a>
             <p>Published: 11/11/11</p>
           </section>
           <figure>
-            <img src="/img/skating.jpeg" alt="fill">
+            <img src="./img/skating.jpeg" alt="fill">
           </figure>
           <section class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero eligendi possimus deserunt. Cum neque sapiente ullam labore, veritatis dolorem, dolore reiciendis ipsum laborum facilis pariatur iure expedita est debitis.</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, reiciendis quo incidunt laudantium quaerat ipsum cumque nesciunt, enim placeat consectetur voluptate voluptatibus quae labore vitae autem hic, neque illum inventore?</p>
           </section>
         </article>
+        <!-- article three -->
         <article id="three" class="post three">
           <h2>Blog post 3</h2>
           <section class="banner">
-            <a href="index.html" class="twitter"><img src="/img/twitter-icon.jpg" alt="twitter-icon"></a>
-            <a href="index.html" class="facebook"><img src="/img/facebook-icon.png" alt="facebook-icon"></a>
+            <a href="index.html" class="twitter"><img src="./img/twitter-icon.jpg" alt="twitter-icon"></a>
+            <a href="index.html" class="facebook"><img src="./img/facebook-icon.png" alt="facebook-icon"></a>
             <p>Published: 11/11/11</p>
           </section>
           <figure>
-            <img src="/img/skating.jpeg" alt="fill">
+            <img src="./img/skating.jpeg" alt="fill">
           </figure>
           <section class="content">
             <p>whatLorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero eligendi possimus deserunt. Cum neque sapiente ullam labore, veritatis dolorem, dolore reiciendis ipsum laborum facilis pariatur iure expedita est debitis.</p>
             <p>Lorem ipsum dolor, sit amet consddddectetur adipisicing elit. Dolor, reiciendis quo incidunt laudantium quaerat ipsum cumque nesciunt, enim placeat consectetur voluptate voluptatibus quae labore vitae autem hic, neque illum inventore?</p>
           </section>
         </article>
+        <!-- article four -->
         <article id="four" class="post four">
           <h2>Blog post 4</h2>
           <section class="banner">
-            <a href="index.html" class="twitter"><img src="/img/twitter-icon.jpg" alt="twitter-icon"></a>
-            <a href="index.html" class="facebook"><img src="/img/facebook-icon.png" alt="facebook-icon"></a>
+            <a href="index.html" class="twitter"><img src="./img/twitter-icon.jpg" alt="twitter-icon"></a>
+            <a href="index.html" class="facebook"><img src="./img/facebook-icon.png" alt="facebook-icon"></a>
             <p>Published: 11/11/11</p>
           </section>
           <figure>
-            <img src="/img/skating.jpeg" alt="fill">
+            <img src="./img/skating.jpeg" alt="fill">
           </figure>
           <section class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero eligendi possimus deserunt. Cum neque sapiente ullam labore, veritatis dolorem, dolore reiciendis ipsum laborum facilis pariatur iure expedita est debitis.</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, reiciendis quo incidunt laudantium quaerat ipsum cumque nesciunt, enim placeat consectetur voluptate voluptatibus quae labore vitae autem hic, neque illum inventore?</p>
           </section>
         </article>
+        <!-- article five -->
         <article id="five" class="post five">
           <h2>Blog post 5</h2>
           <section class="banner">
-            <a href="index.html" class="twitter"><img src="/img/twitter-icon.jpg" alt="twitter-icon"></a>
-            <a href="index.html" class="facebook"><img src="/img/facebook-icon.png" alt="facebook-icon"></a>
+            <a href="index.html" class="twitter"><img src="./img/twitter-icon.jpg" alt="twitter-icon"></a>
+            <a href="index.html" class="facebook"><img src="./img/facebook-icon.png" alt="facebook-icon"></a>
             <p>Published: 11/11/11</p>
           </section>
           <figure>
-            <img src="/img/skating.jpeg" alt="fill">
+            <img src="./img/skating.jpeg" alt="fill">
           </figure>
           <section class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero eligendi possimus deserunt. Cum neque sapiente ullam labore, veritatis dolorem, dolore reiciendis ipsum laborum facilis pariatur iure expedita est debitis.</p>
