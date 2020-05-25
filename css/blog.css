@@ -8,35 +8,34 @@
   width: 90%;
   margin: 0 auto;
   background:linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1));
-  border: solid 1px #fff;
+  /* border: solid 1px #fff; */
 }
 
 .main-container .headings {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border: solid 1px white;
   width: 100%;
-  border: solid 1px #fff;
+  /* border: solid 1px #fff; */
 }
 
 .main-container h1 {
   color: white;
   width: 100%;
-  border: solid 1px #fff;
   margin-top: 7vh;
   text-align: center;
   height: 7vh;
   font-size: 3.0rem;
+  /* border: solid 1px #fff; */
 }
 
 .main-container h3 {
   color: white;
   margin-top: 10px;
   width: 100%;
-  border: solid 1px #fff;
   text-align: center;
   font-size: 1.5rem;
+  /* border: solid 1px #fff; */
 }
 
 .recents-scroll {
@@ -63,7 +62,7 @@
   grid-template-areas: 
   "img img img img img img"
   "txt txt txt txt txt txt";
-  border: solid 1px white;
+  border: groove 3px gray;
   
 }
 
@@ -91,20 +90,21 @@
   position: relative;
   width: 100%;
   color: white;
-  border: solid 1px white;
+  padding-left: 10px;
+  /* border: solid 1px white; */
 
 }
 
 .recents a {
   text-decoration: none;
   color: white;
-  border: solid 1px white;
   grid-area: btn;
   font-size: 0.9rem;
   width: 20%;
   text-align: center;
   border-radius: 10px;
   transition: 0.5s ease-in;
+  border: solid 1px #3d72a4;
 }
 
 .recents a:hover {
@@ -114,8 +114,6 @@
 section.blog {
   position: relative;
   width: 1000px;
-  
-  border: solid 1px white;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: 1fr;
@@ -125,6 +123,7 @@ section.blog {
   "blog3"
   "blog4"
   "blog5";
+  /* border: solid 1px white; */
 }
 
 article.one {
@@ -147,7 +146,7 @@ article.five {
   grid-area: blog5;
 }
 
-article.post{
+article.post {
   margin-top: 7vh;
   display: grid;
   grid-template-rows: 0.4fr 40px; 1fr 1fr;
@@ -160,8 +159,7 @@ article.post{
   "txt txt txt txt txt txt"
   "txt txt txt txt txt txt";
   grid-row-gap: 2vh;
-  border: solid 1px white;
-  
+  border: groove 15px rgba(255, 255, 255, 0.4);
 }
 
 article.post h2 {
@@ -173,7 +171,7 @@ article.post h2 {
   grid-area: title;
   color: white;
   text-align: center;
-  border: solid 1px white;
+  /* border: solid 1px white; */
 
 
 }
@@ -185,7 +183,9 @@ article.post .banner {
   grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
   grid-template-areas: 
   "twitter facebook time time";
-  border: solid 1px white;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  background-color: #3d72a4;
 }
 
 article.post figure {
@@ -198,7 +198,7 @@ article.post figure {
 article.post .content {
   grid-area: txt;
   color: white;
-  border: solid 1px white;
+  /* border: solid 1px white; */
 }
 
 article.post figure img {

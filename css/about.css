@@ -31,6 +31,8 @@ section.main figure img {
   position: relative;
   width: 60%;
   height: 85%;
+  border: groove 3px gray;
+
 }
 
 section.main figure figcaption {
@@ -56,6 +58,21 @@ section.main article p {
   flex-shrink: 1;
   /* border: solid 1px #fff; */
   width: 100%;
+}
+
+section.main article a {
+
+  text-decoration: none;
+  color: white;
+  border: solid 1px #3d72a4;
+  padding: 3px;
+  margin: 10px auto;
+  border-radius: 20px;
+  transition: 0.5s ease-in;
+}
+
+section.main article a:hover {
+  background-color: rgba(211,211,211,0.5);
 }
 
 section.main section.life-container {
