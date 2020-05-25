@@ -9,7 +9,9 @@ body {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(../img/background1.jpeg);
+  background-position: center bottom;
   
+/* font for all headings */
 }
 h1,
 h2,
@@ -18,17 +20,19 @@ h4 {
   font-family: 'Oswald', sans-serif;
 }
 
+/* font for information and links */
 p,
 a {
   font-family: 'Quattrocento', serif;
 }
 
+/* home page main container containing name and button */
 .main { 
   color: #fff;
   width: 90%;
   height: 100%;
   position: relative;
-  left: 5%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,20 +40,15 @@ a {
   text-align: center;
 }
 
-
+/* font size for the home page headings */
 .main h1 {
-  position: relative;
-  bottom: 1.5rem;
-  top: 0.5rem;
   font-size: 3.5rem;
 }
 .main h2 {
-  position: relative;
-  top: 1.0rem;
+  font-size: 1.5rem;
 }
-
+/* styling for botton on homepage */
 .btn {
-  display: inline-block;
   border-radius: 20px;
   border: 1px solid #3d72a4;
   color: #fff;
@@ -64,8 +63,8 @@ a {
 .btn:hover {
   background-color: rgba(211,211,211,0.5);
 }
-
-header {
+/* styling for header which contains the sections for nav menu */
+.nav-bar {
   position: fixed;
   top: 0;
   right: 0;
@@ -75,35 +74,34 @@ header {
   background-color: rgba(0,0,0);
 }
 
-header .logo {
-  position: absolute;
-  top: 0; 
-  left: 0;
+/* container that holds the  */
+h1.logo {
+  position: relative;
   cursor: pointer;
-  width: 7%;
   height: 5vh;
-  margin-top: 1vh;
-  margin-left: 3%;
-}
-
-header .logo > h1 {
-  width: 2.8rem;
-  height: 100%;
+  width: 8vh;
   border-top: solid 0.5vh #3d72a4;
   border-bottom: solid 0.5vh #3d72a4;
-  font-size: 2rem;
-  line-height: 0.8;
+  margin-top: 0.5vh;
+  margin-left: 2vh;
 }
-
-header .logo > h1 > a {
+/* styling the anchor tag which is effectively the home button */
+h1.logo a {
+  position: relative;
+  display: block;
   text-decoration: none;
+  text-align: center;
   color: white;
+  height: 90%;
   width: 100%;
-  height: 100%;
+  font-size: 4vh;
+  bottom: 0.5vh;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 /* hamburger button */
-header .checked-state {
+.nav-bar .checked-state {
   position: absolute;
   top: 0;
   right: 0;
@@ -117,7 +115,7 @@ header .checked-state {
 }
 
 /* box that contains hamburger */
-header .hamburger {
+.nav-bar .hamburger {
   position: absolute;
   top: 0;
   right: 0;
@@ -127,14 +125,13 @@ header .hamburger {
   max-width: 50px;
   /* padding: 1%; */
   margin-right: 2vh;
-  background-color: rgba(0, 0 ,0);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* hamburger symbol */
-header .hamburger > div {
+/* hamburger symbol making the center line*/
+.nav-bar .hamburger div {
   position: relative;
   width: 100%;
   max-width: 40px;
@@ -146,9 +143,9 @@ header .hamburger > div {
   transition: all 0.4s ease;
 }
 
-/* still making the hamburger */
-header .hamburger > div:before,
-header .hamburger > div:after {
+/* making the top and bottom lines */
+.nav-bar .hamburger div:before,
+.nav-bar .hamburger div:after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -158,45 +155,46 @@ header .hamburger > div:after {
   background: inherit;
   background-color: white;
 }
-
-header .hamburger > div:after {
+/* moving one of the lines to the top */
+.nav-bar .hamburger div:after {
   top: 1.8vh;
 }
-
-header .checked-state:checked + .hamburger > div {
+/* rotates hamburger when button is checked */
+.nav-bar .checked-state:checked + .hamburger div {
   transform: rotate(135deg);
 }
-
-header .checked-state:checked + .hamburger > div:before,
-header .checked-state:checked + .hamburger > div:after {
+/* When checked top and bottom hamburger items merge at centre */
+.nav-bar .checked-state:checked + .hamburger div:before,
+.nav-bar .checked-state:checked + .hamburger div:after {
   top: 0;
   transform: rotate(90deg);
 }
-
-header .checked-state:checked:hover + .hamburger > div {
+/* when checked and  */
+.nav-bar .checked-state:checked:hover + .hamburger div {
   transform: rotate(225deg);
 }
-
-header .checked-state:checked ~ .menu {
+/* div menu becomes visable when checked */
+.nav-bar .checked-state:checked ~ .menu {
   visibility: visible;
 }
-
-header .checked-state:checked ~ body {
+/* background tinting when checked */
+.nav-bar .checked-state:checked ~ body {
   background: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1)), url(../img/background1.jpeg);
   background-position: center bottom;
 }
-header .checked-state:checked ~ .menu > div {
+/* div section in menu grows to normal size when checked */
+.nav-bar .checked-state:checked ~ .menu div {
   transform: scale(1);
   transition-duration: 0.3s;
 }
-
-header .checked-state:checked ~ .menu > div > div,
-header .checked-state:checked ~ .menu > div > nav {
+/* nav and social buttons opacity = 1 when button checked */
+.nav-bar .checked-state:checked ~ .menu div  div,
+.nav-bar .checked-state:checked ~ .menu div  nav {
   opacity: 1;
   transition: opacity 0.4s ease;
 }
 
-header .menu {
+.nav-bar .menu {
   position: fixed;
   background-color: rgba( 40, 40, 40, 0.5);
   top: 0;
@@ -210,7 +208,7 @@ header .menu {
   justify-content: flex-end;
 }
 
-header .menu > div {
+.nav-bar .menu > div {
   width: 60vw;
   height: 50vh;
   display: flex;
@@ -222,28 +220,30 @@ header .menu > div {
   transition: all 0.4s ease;
 }
 
-header .menu > div > div.twitter,
-header .menu > div > div.linkedin,
-header .menu > div > div.github {
+.nav-bar div.twitter,
+.nav-bar div.linkedin,
+.nav-bar div.github {
   padding-top: 1vh;
   padding-left: 1vw;
   height: 6vh;
 }
 
 
-header .menu > div > div.github {
+.nav-bar div.github {
   margin-right: 25%;
 }
 
-header .menu > div > div > a > img {
+.nav-bar .menu img {
   height: 100%;
   width: 100%;
   transition: transform 1s;
 }
-header .menu > div > div > a > img:hover {
+/* social buttons increase size when hover */
+.nav-bar .menu img:hover {
   transform: scale(1.3);
 }
-header .menu > div > nav {
+
+.nav-bar nav {
   position: relative;
   text-align: right;
   margin-top: 1vh;
@@ -251,8 +251,8 @@ header .menu > div > nav {
   width: 90%;
   opacity: 0;
 }
-
-header .menu > div > nav > ul > li {
+/* styling nav list */
+.nav-bar li {
   list-style: none;
   color: #fff;
   font-size: 4vh;
@@ -261,8 +261,8 @@ header .menu > div > nav > ul > li {
   border-radius: 20px;
 }
 
-
-header .menu > div > nav > ul > li > a { 
+/* styling nav bar anchor elements */
+.nav-bar li > a { 
   color: inherit;
   text-decoration: none;
   border-radius: 20px;
@@ -270,7 +270,7 @@ header .menu > div > nav > ul > li > a {
   transition: 0.5s ease-in;
   
 } 
-
-header .menu > div > nav > ul > li > a:hover {
+/* make navbar highlight when hover */
+ .menu li a:hover {
   background-color: rgba(211,211,211,0.5);
 }
