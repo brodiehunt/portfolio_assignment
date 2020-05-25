@@ -54,7 +54,7 @@
 
 section .item {
   border: solid 1px #fff;
-  width: 90%;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
   display: grid;

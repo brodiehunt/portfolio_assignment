@@ -53,6 +53,24 @@
     "pro-3 pro-4"
     "pro-5 pro-6";
  }
+
+ .recents {
+   min-width: 300px;
+ }
+
+ article.post h2 {
+   font-size: 3rem;
+ }
+ 
+ .main-container h1 {
+   font-size: 3.5rem;
+ }
+ .main-container h3 {
+   font-size: 2rem;
+ }
+ article.post .banner {
+   grid-template-columns: 0.31fr 0.5fr 1fr 1fr
+ }
 }
 
 @media only screen and (min-width: 992px) {
@@ -104,5 +122,13 @@
    }
    section .item {
     grid-template-rows: 0.3fr 1fr 0.8fr 0.1fr; 
+  }
+
+  .recents {
+    margin-right: 4vw;
+  }
+
+  article.post .banner {
+    grid-template-columns: 0.2fr 0.5fr 1fr 1fr
   }
 }
