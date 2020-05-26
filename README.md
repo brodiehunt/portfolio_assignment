@@ -4,6 +4,12 @@
 
 ### By Brodie Hunt
 
+[deployed app](https://brodiehunt.netlify.app/)
+
+[github repository](https://github.com/brodiehunt/portfolio_assignment)
+
+
+
 ## Purpose
 
 The purpose of building this Portfolio website was to demonstrate my abilities in html and CSS to potential employers. It is also the purpose of the website to showcase other material that would demonstrate my competence in programming, and provide an elegent display of this material. From an Academic perspective, this portfolio was used to test and expand my knowledge with the html and css format.
