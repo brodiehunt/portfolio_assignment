@@ -52,7 +52,7 @@ This website was built using only:
 
   [home-desktop](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/home/home-desktop.png)
 
-  [home-mobile](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/home/home-mobile.png)
+  ![home-mobile](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/home/home-mobile.png)
 
   [about-me desktop](https://github.com/brodiehunt/portfolio_assignment/blob/master/docs/Screenshots/about-me/about-me-desktop.png)
 
